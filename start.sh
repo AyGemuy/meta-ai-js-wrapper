@@ -22,7 +22,7 @@ echo "✅ Tudo pronto!"
 echo ""
 echo "Para iniciar o servidor, execute:"
 echo ""
-echo "  npm run server"
+npm run server
 echo ""
 echo "O servidor estará disponível em: http://localhost:3000"
 echo ""
