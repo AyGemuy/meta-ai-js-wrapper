@@ -1,11 +1,7 @@
 import app from "./api";
 
-const PORT = process.env.PORT || 3000;
+const PORT = Number(process.env.PORT) || 3000;
 
-app.listen(PORT, () => {
-    console.log(`🚀 Meta AI API rodando em http://localhost:${PORT}`);
-    console.log(`📍 Teste em: http://localhost:${PORT}/health`);
-    console.log(
-        `💬 Envie prompts para: POST http://localhost:${PORT}/api/prompt`,
-    );
+app.listen(PORT, "0.0.0.0", () => {
+    console.log(`🚀 Server running on http://0.0.0.0:${PORT}`);
 });
